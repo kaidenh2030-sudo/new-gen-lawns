@@ -4,23 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Next Gen Lawns | Book Now</title>
-
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background: #f4f7f2;
       color: #142018;
     }
-
     header {
       height: 70px;
       padding: 0 7%;
@@ -33,17 +25,12 @@
       top: 0;
       z-index: 10;
     }
-
     .logo {
       font-size: 20px;
       font-weight: 900;
       letter-spacing: 2px;
     }
-
-    .logo span {
-      color: #397149;
-    }
-
+    .logo span { color: #397149; }
     .nav-button,
     .button {
       background: #183d26;
@@ -55,7 +42,6 @@
       font-weight: bold;
       cursor: pointer;
     }
-
     .hero {
       min-height: 570px;
       display: flex;
@@ -65,11 +51,7 @@
       padding: 60px 20px;
       background: linear-gradient(135deg, #dcebd9, #f8faf7);
     }
-
-    .hero-content {
-      max-width: 750px;
-    }
-
+    .hero-content { max-width: 750px; }
     .eyebrow {
       color: #397149;
       font-size: 13px;
@@ -77,29 +59,20 @@
       letter-spacing: 3px;
       margin-bottom: 15px;
     }
-
     h1 {
       font-size: clamp(50px, 9vw, 100px);
       line-height: .9;
       margin: 0 0 25px;
       letter-spacing: -5px;
     }
-
-    h1 span {
-      color: #397149;
-    }
-
+    h1 span { color: #397149; }
     .hero p {
       color: #56625a;
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 30px;
     }
-
-    .booking-section {
-      padding: 70px 20px;
-    }
-
+    .booking-section { padding: 70px 20px; }
     .booking-card {
       max-width: 750px;
       margin: auto;
@@ -108,28 +81,23 @@
       padding: 40px;
       box-shadow: 0 20px 50px rgba(0,0,0,.08);
     }
-
     h2 {
       font-size: 35px;
       margin: 0 0 10px;
     }
-
     .description {
       color: #68736b;
       margin-bottom: 30px;
     }
-
     form {
       display: grid;
       gap: 18px;
     }
-
     label {
       font-weight: bold;
       display: grid;
       gap: 8px;
     }
-
     input,
     select,
     textarea {
@@ -140,389 +108,173 @@
       font: inherit;
       background: white;
     }
-
-    textarea {
-      resize: vertical;
-    }
-
+    textarea { resize: vertical; }
     input:focus,
     select:focus,
     textarea:focus {
       outline: 2px solid #b9d2bd;
     }
-
     .two-columns {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 15px;
     }
-
     .full {
       width: 100%;
       font-size: 16px;
     }
-
     .small-text {
       text-align: center;
       color: #777;
       font-size: 12px;
     }
-
-    .success {
-      text-align: center;
-      padding: 30px 0;
-    }
-
-    .check {
-      width: 60px;
-      height: 60px;
-      margin: auto auto 15px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      background: #dcebd9;
-      color: #245c32;
-      font-size: 30px;
-      font-weight: bold;
-    }
-
-    .hidden {
-      display: none;
-    }
-
     footer {
       background: #183d26;
       color: white;
       text-align: center;
       padding: 30px;
     }
-
     @media (max-width: 650px) {
-      header {
-        padding: 0 18px;
-      }
-
-      .hero {
-        min-height: 500px;
-      }
-
-      .booking-card {
-        padding: 25px 18px;
-      }
-
-      .two-columns {
-        grid-template-columns: 1fr;
-      }
-
-      h1 {
-        font-size: 58px;
-      }
+      header { padding: 0 18px; }
+      .hero { min-height: 500px; }
+      .booking-card { padding: 25px 18px; }
+      .two-columns { grid-template-columns: 1fr; }
+      h1 { font-size: 58px; }
     }
   </style>
 </head>
-
 <body>
-
 <header>
   <div class="logo">
     NEXT GEN <span>LAWNS</span>
   </div>
 
-  <a href="#book" class="nav-button">
-    Book Now
-  </a>
+Book Now
+
 </header>
-
-
 <section class="hero">
-
   <div class="hero-content">
-
-    <div class="eyebrow">
-      LAWN CARE • EASY BOOKING
-    </div>
-
-    <h1>
-      Your lawn.<br>
-      <span>Next generation.</span>
-    </h1>
-
-    <p>
-      Tell us what your property needs and choose a
-      time that works for you.
-    </p>
-
-    <a href="#book" class="button">
-      Schedule Service
-    </a>
-
+<div class="eyebrow">
+  LAWN CARE • EASY BOOKING
+</div>
+<h1>
+  Your lawn.<br>
+  <span>Next generation.</span>
+</h1>
+<p>
+  Tell us what your property needs and choose a
+  time that works for you.
+</p>
+<a href="#book" class="button">
+  Schedule Service
+</a>
   </div>
-
 </section>
-
-
 <section class="booking-section" id="book">
-
   <div class="booking-card">
-
-    <div class="eyebrow">
-      REQUEST SERVICE
-    </div>
-
-    <h2>
-      Book an appointment
-    </h2>
-
-    <p class="description">
-      Fill this out and Next Gen Lawns will contact you
-      to confirm your appointment.
-    </p>
-
-
-   <form id="bookingForm" action="https://formspree.io/f/xeajprrj" method="POST">
-
-      <label>
-        Full Name
-
-        <input
-          type="text"
-          id="name"
-          placeholder="Your name"
-          required
-        >
-      </label>
-
-
-      <label>
-        Phone Number
-
-        <input
-          type="tel"
-          id="phone"
-          placeholder="(555) 555-5555"
-          required
-        >
-      </label>
-
-
-      <label>
-        Address
-
-        <input
-          type="text"
-          id="address"
-          placeholder="Where is the lawn?"
-          required
-        >
-      </label>
-
-
-      <label>
-        What needs done?
-
-        <textarea
-          id="job"
-          rows="5"
-          placeholder="Example: Mow front and back yard, trim around driveway, clean up clippings..."
-          required
-        ></textarea>
-      </label>
-
-
-      <label>
-        Service
-
-        <select id="service" required>
-
-          <option value="">
-            Select a service
-          </option>
-
-          <option>
-            Lawn mowing
-          </option>
-
-          <option>
-            Trimming / edging
-          </option>
-
-          <option>
-            Cleanup
-          </option>
-
-          <option>
-            Mulching
-          </option>
-
-          <option>
-            Other
-          </option>
-
-        </select>
-
-      </label>
-
-
-      <div class="two-columns">
-
-        <label>
-          Preferred Date
-
-          <input
-            type="date"
-            id="date"
-            required
-          >
-        </label>
-
-
-        <label>
-          Appointment Time
-
-          <select id="time" required>
-
-            <option value="">
-              Select a time
-            </option>
-
-            <option>8:00 AM</option>
-            <option>9:00 AM</option>
-            <option>10:00 AM</option>
-            <option>11:00 AM</option>
-            <option>12:00 PM</option>
-            <option>1:00 PM</option>
-            <option>2:00 PM</option>
-            <option>3:00 PM</option>
-            <option>4:00 PM</option>
-            <option>5:00 PM</option>
-
-          </select>
-
-        </label>
-
-      </div>
-
-
-      <button
-        class="button full"
-        type="submit"
-      >
-        Request Appointment
-      </button>
-
-
-      <div class="small-text">
-        Your appointment isn't confirmed until
-        Next Gen Lawns approves it.
-      </div>
-
-    </form>
-
-
-    <div
-      id="success"
-      class="success hidden"
+<div class="eyebrow">
+  REQUEST SERVICE
+</div>
+<h2>Book an appointment</h2>
+<p class="description">
+  Fill this out and Next Gen Lawns will contact you
+  to confirm your appointment.
+</p>
+<form action="https://formspree.io/f/xeajprrj" method="POST">
+  <label>
+    Full Name
+    <input
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
     >
-
-      <div class="check">
-        ✓
-      </div>
-
-      <h2>
-        Request received!
-      </h2>
-
-      <p>
-        Thanks! Next Gen Lawns will contact you
-        to confirm your appointment.
-      </p>
-
-      <button
-        class="button"
-        onclick="location.reload()"
+  </label>
+  <label>
+    Phone Number
+    <input
+      type="tel"
+      name="phone"
+      placeholder="(555) 555-5555"
+      required
+    >
+  </label>
+  <label>
+    Address
+    <input
+      type="text"
+      name="address"
+      placeholder="Where is the lawn?"
+      required
+    >
+  </label>
+  <label>
+    What needs done?
+    <textarea
+      name="job"
+      rows="5"
+      placeholder="Example: Mow front and back yard, trim around driveway, clean up clippings..."
+      required
+    ></textarea>
+  </label>
+  <label>
+    Service
+    <select name="service" required>
+      <option value="">Select a service</option>
+      <option>Lawn mowing</option>
+      <option>Trimming / edging</option>
+      <option>Cleanup</option>
+      <option>Mulching</option>
+      <option>Other</option>
+    </select>
+  </label>
+  <div class="two-columns">
+    <label>
+      Preferred Date
+      <input
+        type="date"
+        name="date"
+        id="date"
+        required
       >
-        Book Another Appointment
-      </button>
-
-    </div>
-
+    </label>
+    <label>
+      Appointment Time
+      <select name="time" required>
+        <option value="">Select a time</option>
+        <option>8:00 AM</option>
+        <option>9:00 AM</option>
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>12:00 PM</option>
+        <option>1:00 PM</option>
+        <option>2:00 PM</option>
+        <option>3:00 PM</option>
+        <option>4:00 PM</option>
+        <option>5:00 PM</option>
+      </select>
+    </label>
   </div>
-
+  <button class="button full" type="submit">
+    Request Appointment
+  </button>
+  <div class="small-text">
+    Your appointment isn't confirmed until
+    Next Gen Lawns approves it.
+  </div>
+</form>
+  </div>
 </section>
-
-
 <footer>
   © 2026 Next Gen Lawns
 </footer>
-
-
 <script>
-
-  // Prevent customers from choosing a past date
   const dateInput = document.getElementById("date");
-
   const today = new Date();
-
   const year = today.getFullYear();
   const month = String(today.getMonth() + 1).padStart(2, "0");
   const day = String(today.getDate()).padStart(2, "0");
-
   dateInput.min = `${year}-${month}-${day}`;
-
-
-  // Booking form
-  document
-    .getElementById("bookingForm")
-    .addEventListener("submit", function(event) {
-
-      event.preventDefault();
-
-      const booking = {
-
-        name:
-          document.getElementById("name").value,
-
-        phone:
-          document.getElementById("phone").value,
-
-        address:
-          document.getElementById("address").value,
-
-        job:
-          document.getElementById("job").value,
-
-        service:
-          document.getElementById("service").value,
-
-        date:
-          document.getElementById("date").value,
-
-        time:
-          document.getElementById("time").value
-
-      };
-
-      /*
-        This is where we'll connect the form
-        to your SMS booking system.
-
-        The booking information will eventually
-        be sent to your phone automatically.
-      */
-
-      console.log("NEXT GEN LAWNS BOOKING:", booking);
-
-      document
-        .getElementById("bookingForm")
-        .classList.add("hidden");
-
-      document
-        .getElementById("success")
-        .classList.remove("hidden");
-
-    });
-
 </script>
-
 </body>
 </html>
